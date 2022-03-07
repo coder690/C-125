@@ -23,3 +23,11 @@ def get_prediction(image):
     test_sample = np.array(image_bw_resized_inverted_scaled).reshape(1,784) 
     test_pred = clf.predict(test_sample) 
     return test_pred[0]
+
+X=np.load("image.npz")["arr_0]
+Y=pd.read_csv("labels.csv")["labels"]
+print(pd.read.Series(y).value_counts()
+      
+classess=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+nclasses=len(classes)
+random_state=9,train_size=3500,test_size=500     
